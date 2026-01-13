@@ -81,6 +81,11 @@ Generate graphs from the CSV data.
 python evaluate_plots.py
 ```
 
+Example of one of the generated graphs:
+
+![Example of Result](result.png)
+
+
 ### 4. Credits
 
 **Machine Learning Final Project Members:**
