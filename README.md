@@ -1,6 +1,10 @@
 # Deep Learning Image Colorization (U-Net & LAB)
 ![Project Banner](banner.png)
 
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+
 ### 1. About The Project
 
 This project explores the impact of training separate chrominance channels on the accuracy of image colorization. By utilizing a modified U-Net architecture, we tested whether splitting the LAB color space into separate training tasks (predicting 'A' and 'B' channels independently) yields higher accuracy than training on the unified LAB space.
