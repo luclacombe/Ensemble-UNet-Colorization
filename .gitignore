@@ -1,0 +1,22 @@
+# --- Project Root .gitignore ---
+
+# Virtual Environment (DO NOT UPLOAD THIS)
+.venv/
+venv/
+ENV/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+
+# Output folders
+Gen/
+Tab/
+
+# Generated Reports (Safety net)
+*.xlsx
+
+# IGNORE huge datasets
+# data/ is allowed, but strictly for sample images

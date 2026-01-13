@@ -1,0 +1,14 @@
+numpy
+opencv-python
+matplotlib
+pandas
+scikit-learn
+tensorflow
+scikit-image
+seaborn
+openpyxl
+torch
+lpips
+tqdm
+scipy
+Pillow
