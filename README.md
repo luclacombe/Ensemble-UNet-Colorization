@@ -20,7 +20,7 @@ The model was trained on a subset of the FFHQ dataset (20,000 images), using LPI
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/NewProjectName.git](https://github.com/yourusername/NewProjectName.git)
+   git clone [https://github.com/luclacombe/Ensemble-UNet-Colorization.git)
    ```
 
 2. Install the dependencies:
