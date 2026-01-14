@@ -1,5 +1,5 @@
 # Deep Learning Image Colorization (U-Net & LAB)
-![Project Banner](banner.png)
+![Project Banner](Assets/banner.png)
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -11,7 +11,7 @@ This project explores the impact of training separate chrominance channels on th
 
 The model was trained on a subset of the FFHQ dataset (20,000 images), using LPIPS (Learned Perceptual Image Patch Similarity) to evaluate perceptual realism against Ground Truth.
 
-**[📄 Click Here to Read the Full Report (PDF)](ML_Project_Report.pdf)**
+**[📄 Click Here to Read the Full Report (PDF)](Assets/ML_Project_Report.pdf)**
 
 #### Key Features
 - **Custom U-Net Architecture:** Built from scratch to handle LAB color space tensors.
@@ -42,7 +42,7 @@ To replicate the results, follow the pipeline below.
 - Place ground truth color images in `data/Col/`. Name files appropriately (see example in `data/Col/`).
 
 ### Step 2: Generate Colorizations
-The model requires you to specify the training mode manually before execution.
+The model requires you to specify the training mode manually before execution. Model files will be saved under `Models`. Colorized images will be saved under created folders: `Gen/{selected_training_mode}/`. 
 
 #### A. Generate LA (Lightness + A channel)
 1. Open `main.py` in your text editor.
@@ -61,7 +61,7 @@ The model requires you to specify the training mode manually before execution.
 2. Run the script again.
 
 ### Step 3: Ensemble
-Combine the outputs from the split-channel models (LA and LB) into a final image (LA + LB).
+Combine the outputs from the split-channel models (LA and LB) into a final image (LA + LB). The LA + LB images will be saved under the created folders: `Gen/LA+LB/`.
 ```bash
 python ensemble.py
 ```
@@ -83,7 +83,7 @@ python evaluate_plots.py
 
 Example of one of the generated graphs:
 
-![Example of Result](result.png)
+![Example of Result](Assets/result.png)
 
 
 ### 4. Credits
