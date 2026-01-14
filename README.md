@@ -7,7 +7,7 @@
 
 ### 1. About The Project
 
-This project explores the impact of training separate chrominance channels on the accuracy of image colorization. By utilizing a modified U-Net architecture, we tested whether splitting the LAB color space into separate training tasks (predicting 'A' and 'B' channels independently) yields higher accuracy than training on the unified LAB space.
+This university project explores the impact of training separate chrominance channels on the accuracy of image colorization. By utilizing a modified U-Net architecture, we tested whether splitting the LAB color space into separate training tasks (predicting 'A' and 'B' channels independently) yields higher accuracy than training on the unified LAB space.
 
 The model was trained on a subset of the FFHQ dataset (20,000 images), using LPIPS (Learned Perceptual Image Patch Similarity) to evaluate perceptual realism against Ground Truth.
 
@@ -42,7 +42,7 @@ To replicate the results, follow the pipeline below.
 - Place ground truth color images in `data/Col/`. Name files appropriately (see example in `data/Col/`).
 
 ### Step 2: Generate Colorizations
-The model requires you to specify the training mode manually before execution. Model files will be saved under `Models`. Colorized images will be saved under created folders: `Gen/{selected_training_mode}/`. 
+The model requires you to specify the training mode manually before execution. Model files will be saved under `Models`. Colorized images will be saved under created folders: `Gen/{selected_training_model}/`. 
 
 #### A. Generate LA (Lightness + A channel)
 1. Open `main.py` in your text editor.
